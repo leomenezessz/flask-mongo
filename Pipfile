@@ -10,6 +10,7 @@ pytest = "*"
 [packages]
 pymongo = "*"
 invoke = "*"
+flask = "*"
 
 [requires]
 python_version = "3.7"
