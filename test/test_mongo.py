@@ -1,5 +1,5 @@
 from assertpy import assert_that
-from test.fixtures.mongo_fixtures import *
+from test.fixtures.fixtures import *
 
 
 class TestMongo:
