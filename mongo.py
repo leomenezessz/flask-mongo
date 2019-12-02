@@ -1,5 +1,7 @@
 from pymongo import MongoClient
 
+retrieve_id = {'_id': False}
+
 
 class Mongo:
     def __init__(self, host, port):
@@ -12,10 +14,10 @@ class Mongo:
         return self.connection[db_name][col].insert_many(docs)
 
     def find_docs(self, db_name, col, query):
-        return self.connection[db_name][col].find(query)
+        return self.connection[db_name][col].find(query, retrieve_id)
 
     def find_doc(self, db_name, col, doc):
-        return self.connection[db_name][col].find_one(doc)
+        return self.connection[db_name][col].find_one(doc, retrieve_id)
 
     def update_doc(self, db_name, col, doc):
         return self.connection[db_name][col].update_one(
