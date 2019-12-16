@@ -10,8 +10,8 @@ class Development(Config):
 
 
 class Production(Config):
-    DB_URI = "mongodb+srv://flask-rest:BMK0FM7fql0AHcQx@flask-mongo1-ecty1.mongodb.net/"
+    DB_URI = "mongodb://flask-user:A5k9Nce9PVJi@ds211268.mlab.com:11268/heroku_qt82bw6b?retryWrites=false"
     COLL_NAME = "digimons"
-    DB_NAME = "prod"
+    DB_NAME = "heroku_qt82bw6b"
 
 
