@@ -4,8 +4,8 @@ retrieve_id = {'_id': False}
 
 
 class Mongo:
-    def __init__(self, host, port):
-        self.connection = MongoClient(host, port)
+    def __init__(self, uri):
+        self.connection = MongoClient(uri)
 
     def insert_doc(self, db_name, col, doc):
         return self.connection[db_name][col].insert_one(doc)
@@ -26,9 +26,6 @@ class Mongo:
 
     def delete_doc(self, db_name, col, doc):
         return self.connection[db_name][col].delete_one({"id": doc["id"]})
-
-    def db_exists(self, db_name):
-        return db_name in self.connection.list_database_names()
 
     def drop_col(self, db_name, col):
         return self.connection[db_name][col].drop()

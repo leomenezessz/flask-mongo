@@ -45,7 +45,7 @@ def docs():
 
 @pytest.fixture
 def db(request):
-    _db = {"con": Mongo("localhost", 27017), "collection": "digimons", "name": "test"}
+    _db = {"con": Mongo("mongodb://localhost:27017"), "collection": "digimons", "name": "test"}
 
     def drop_collection():
         _db["con"].drop_col("test", "digimons")

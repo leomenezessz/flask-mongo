@@ -12,6 +12,8 @@ pymongo = "*"
 invoke = "*"
 flask = "*"
 flask-restful = "*"
+dnspython = "*"
+uwsgi = "*"
 
 [requires]
 python_version = "3.7"

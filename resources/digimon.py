@@ -11,7 +11,7 @@ _VALID_DELETE_FIELDS = ["id"]
 class Digimon(Resource):
 
     def __init__(self):
-        self.db = Mongo(app.config["DB_URI"], app.config["DB_PORT"])
+        self.db = Mongo(app.config["DB_URI"])
         self.coll = app.config["COLL_NAME"]
         self.db_name = app.config["DB_NAME"]
 
