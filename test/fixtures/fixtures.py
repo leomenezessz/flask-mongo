@@ -1,6 +1,6 @@
 import pytest
-from app.mongo_db import Mongo
-from test.helpers.helpers import dict_to_namedtuple
+from mongo import Mongo
+from test.test_commons.helpers import dict_to_namedtuple
 
 
 @pytest.fixture
