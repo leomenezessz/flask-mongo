@@ -8,12 +8,12 @@ assertpy = "*"
 pytest = "*"
 
 [packages]
-pymongo = "*"
-invoke = "*"
-flask = "*"
-flask-restful = "*"
-dnspython = "*"
-uwsgi = "*"
+pymongo = "==3.10.0"
+invoke = "==1.3.0"
+flask = "==1.1.1"
+flask-restful = "==0.3.7"
+dnspython = "==1.16.0"
+uwsgi = "==2.0.18"
 
 [requires]
 python_version = "3.7"

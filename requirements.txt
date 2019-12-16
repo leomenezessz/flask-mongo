@@ -1,0 +1,6 @@
+pymongo
+invoke
+flask
+flask-restful
+dnspython
+uwsgi
