@@ -39,6 +39,7 @@ $ pytest test/
 - [ ] Integration tests for the digimon resource
 - [ ] Create a pipeline
 - [ ] Add Flask Security 
+- [ ] Add Swagger 
 
 ## Docs
 
